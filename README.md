@@ -1,14 +1,14 @@
 # md-preview
 
-Live Markdown Preview.
+Live Markdown preview.
 
 ## Requirements
 
-  - Emacs \>= 24.3
-  - [pandoc](https://pandoc.org/) program
-  - impatient-mode
-  - simple-httpd
-  - markdown-mode
+- Emacs \>= 26.1
+- [pandoc](https://pandoc.org/) program
+- impatient-mode
+- simple-httpd
+- markdown-mode
 
 ## Installation
 
@@ -20,7 +20,7 @@ Install `md-preview` dependencies - `impatient-mode`, `simple-httpd` and
 Download the source code of `md-preview` and put it wherever you like
 and add the directory to the load path:
 
-``` elisp
+```elisp
 
 (add-to-list 'load-path "/path/to/md-preview)
 
@@ -30,14 +30,14 @@ and add the directory to the load path:
 
 ### With use-package and straight
 
-``` elisp
+```elisp
 
 (use-package md-preview
     :straight (md-preview
                    :repo "KarimAziev/md-preview"
                    :type git
                    :host github)
-    :commands (md-preview))
+    :commands (md-preview-mode))
 
 ```
 
@@ -45,4 +45,4 @@ and add the directory to the load path:
 
 Run in markdown buffer:
 
-`M-x md-preview RET`.
+`M-x md-preview-mode RET`.
